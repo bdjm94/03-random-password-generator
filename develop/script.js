@@ -118,11 +118,51 @@ function one(pwd) {
 
 // If 1, 3, 4 = no, 2 = yes, generate random password with 2
 
+function two(pwd) {
+  var password = "";
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1, 4 = no, 2, 3 = yes, generate random password with 2, 3
+
+function twoThree(pwd) {
+  var password = "";
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 2, 4 = yes, 1, 3 = no, generate random password with 2, 4
 
+function twoFour(pwd) {
+  var password = "";
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 2, 3, 4 = yes, 1 = no, generate random password with 2, 3, 4
+
+function twoThreeFour(pwd) {
+  var password = "";
+  var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 1, 2, 4 = no, 3 = yes, generate random password with 3
 
