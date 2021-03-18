@@ -262,3 +262,9 @@ function four(pwd) {
 }
 
 // If 1, 2, 3, 4 = no, invalid response - please start again
+
+if (lowercaseOption === false && uppercaseOption === false && numberOption === false && symbolsOption === false) {
+  window.alert("Invalid response - no options selected. Please start again.")
+  start();
+}
+}
