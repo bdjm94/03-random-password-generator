@@ -11,7 +11,7 @@ function oneTwoThreeFour(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for ( var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -23,7 +23,7 @@ function oneThreeFour(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -33,7 +33,7 @@ function oneTwoThree(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -45,7 +45,7 @@ function oneTwoFour(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -57,7 +57,7 @@ function oneFour(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -69,7 +69,7 @@ function oneThree(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -81,7 +81,7 @@ function oneTwo(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -93,7 +93,7 @@ function one(pwd) {
   var characters = "abcdefghijklmnopqrstuvwxyz";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -105,7 +105,7 @@ function two(pwd) {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -117,7 +117,7 @@ function twoThree(pwd) {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -129,7 +129,7 @@ function twoFour(pwd) {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -141,7 +141,7 @@ function twoThreeFour(pwd) {
   var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -153,7 +153,7 @@ function three(pwd) {
   var characters = "0123456789";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -165,7 +165,7 @@ function threeFour(pwd) {
   var characters = "0123456789!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
@@ -177,7 +177,7 @@ function four(pwd) {
   var characters = "!@#$%^&*()_+{}[],.<>/;:";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+    password += characters.charAt(Math.floor(Math.random() * charactersPwd));
   }
   return password;
 }
