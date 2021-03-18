@@ -13,14 +13,40 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Answer variables
+var lengthOfPwd;
+var lowercaseOption;
+var uppercaseOption;
+var numberOption;
+var specialCharactersOption;
+
+var start = function() {
 // Prompt asking to choose password between 8 and 128 characters
 // Ok = next prompt
 // Number outside range = Invalid response, please try again
 // Cancel = end prompt
+var pwdGenerator = function () {
+var pwdLength = window.prompt ("Choose a password length between 8 and 128 characters.")
+if (parseInt(pwdLength) >= 8 && parseInt(pwdLength) <= 128){
+lengthOfPwd = pwdLength
+} else {
+  window.alert("Invalid response - please try again.")
+  pwdGenerator()
+}
+};
 
 // Prompt asking if you would like to have lowercase letters(1)
 // Ok = include lowercase
 // cancel = don't include
+var lowercase = () => {
+  var lowercasePrompt = window.confirm("Would you like to include lowercase letters? Ok for Yes, Cancel for No.");
+  if (lowercasePrompt == true) {
+    lowercaseOption = true;
+  } else {
+    lowercaseOption = false;
+  }
+};
+
 
 // Prompt asking you would like to have upper case letters(2)
 // Ok = include upper case letters
