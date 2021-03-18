@@ -4,94 +4,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password();
 
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-// Answer variables
-var lengthOfPwd;
-var lowercaseOption;
-var uppercaseOption;
-var numberOption;
-var symbolsOption;
-
-var start = function() {
-// Prompt asking to choose password between 8 and 128 characters
-// Ok = next prompt
-// Number outside range = Invalid response, please try again
-// Cancel = end prompt
-var pwdGenerator = function () {
-var pwdLength = window.prompt ("Choose a password length between 8 and 128 characters.")
-if (parseInt(pwdLength) >= 8 && parseInt(pwdLength) <= 128){
-lengthOfPwd = pwdLength
-} else {
-  window.alert("Invalid response - please try again.")
-  pwdGenerator()
-}
-};
-
-// Prompt asking if you would like to have lowercase letters(1)
-// Ok = include lowercase
-// cancel = don't include
-var lowercase = () => {
-  var lowercasePrompt = window.confirm("Would you like to include lowercase letters? Ok for Yes, Cancel for No.");
-  if (lowercasePrompt == true) {
-    lowercaseOption = true;
-  } else {
-    lowercaseOption = false;
-  }
-};
-
-
-// Prompt asking you would like to have upper case letters(2)
-// Ok = include upper case letters
-// cancel = don't include
-
-var uppercase = () => {
-  var uppercasePrompt = window.confirm("Would you like to include uppercase letters? Ok for Yes, Cancel for No.");
-  if (uppercasePrompt == true) {
-    uppercaseOption = true;
-  } else {
-    uppercaseOption = false;
-  }
-};
-
-
-// Prompt asking if you would like to have numbers(3)
-
-var numbers = () => {
-  var numbersPrompt = window.confirm("Would you like to include numbers? Ok for Yes, Cancel for No.");
-  if (numbersPrompt == true) {
-    numberOption = true;
-  } else {
-    numberOption = false;
-  }
-};
-
-// Prompt asking if you would like to include symbols(4)
-// Ok = include symbols
-// cancel = don't include
-
-var symbols = () => {
-  var symbolsPrompt = window.confirm("Would you like to include symbols? Ok for Yes, Cancel for No.");
-  if (symbolsPrompt == true) {
-    symbolsOption = true;
-  } else {
-    symbolsOption = false;
-  }
-};
-
-// Running Functions
-pwdGenerator();
-lowercase();
-uppercase();
-numbers();
-symbols();
-
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
 function oneTwoThreeFour(pwd) {
@@ -269,6 +184,91 @@ function four(pwd) {
   }
   return password;
 }
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+// Answer variables
+var lengthOfPwd;
+var lowercaseOption;
+var uppercaseOption;
+var numberOption;
+var symbolsOption;
+
+var start = function() {
+// Prompt asking to choose password between 8 and 128 characters
+// Ok = next prompt
+// Number outside range = Invalid response, please try again
+// Cancel = end prompt
+var pwdGenerator = function () {
+var pwdLength = window.prompt ("Choose a password length between 8 and 128 characters.")
+if (parseInt(pwdLength) >= 8 && parseInt(pwdLength) <= 128){
+lengthOfPwd = pwdLength
+} else {
+  window.alert("Invalid response - please try again.")
+  pwdGenerator()
+}
+};
+
+// Prompt asking if you would like to have lowercase letters(1)
+// Ok = include lowercase
+// cancel = don't include
+var lowercase = () => {
+  var lowercasePrompt = window.confirm("Would you like to include lowercase letters? Ok for Yes, Cancel for No.");
+  if (lowercasePrompt == true) {
+    lowercaseOption = true;
+  } else {
+    lowercaseOption = false;
+  }
+};
+
+
+// Prompt asking you would like to have upper case letters(2)
+// Ok = include upper case letters
+// cancel = don't include
+
+var uppercase = () => {
+  var uppercasePrompt = window.confirm("Would you like to include uppercase letters? Ok for Yes, Cancel for No.");
+  if (uppercasePrompt == true) {
+    uppercaseOption = true;
+  } else {
+    uppercaseOption = false;
+  }
+};
+
+
+// Prompt asking if you would like to have numbers(3)
+
+var numbers = () => {
+  var numbersPrompt = window.confirm("Would you like to include numbers? Ok for Yes, Cancel for No.");
+  if (numbersPrompt == true) {
+    numberOption = true;
+  } else {
+    numberOption = false;
+  }
+};
+
+// Prompt asking if you would like to include symbols(4)
+// Ok = include symbols
+// cancel = don't include
+
+var symbols = () => {
+  var symbolsPrompt = window.confirm("Would you like to include symbols? Ok for Yes, Cancel for No.");
+  if (symbolsPrompt == true) {
+    symbolsOption = true;
+  } else {
+    symbolsOption = false;
+  }
+};
+
+// Running Functions
+pwdGenerator();
+lowercase();
+uppercase();
+numbers();
+symbols();
+
+
 
 // If 1, 2, 3, 4 = no, invalid response - please start again
 
