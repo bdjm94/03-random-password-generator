@@ -64,6 +64,15 @@ var uppercase = () => {
 
 // Prompt asking if you would like to have numbers(3)
 
+var numbers = () => {
+  var numbersPrompt = window.confirm("Would you like to include numbers? Ok for Yes, Cancel for No.");
+  if (numbersPrompt == true) {
+    numberOption = true;
+  } else {
+    numberOption = false;
+  }
+};
+
 // Prompt asking if you would like to include symbols(4)
 // Ok = include symbols
 // cancel = don't include
