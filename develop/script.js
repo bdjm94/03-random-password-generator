@@ -77,6 +77,14 @@ var numbers = () => {
 // Ok = include symbols
 // cancel = don't include
 
+var symbols = () => {
+  var symbolsPrompt = window.confirm("Would you like to include symbols? Ok for Yes, Cancel for No.");
+  if (symbolsPrompt == true) {
+    symbolsOption = true;
+  } else {
+    symbolsOption = false;
+  }
+};
 
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
