@@ -18,7 +18,7 @@ var lengthOfPwd;
 var lowercaseOption;
 var uppercaseOption;
 var numberOption;
-var specialCharactersOption;
+var symbolsOption;
 
 var start = function() {
 // Prompt asking to choose password between 8 and 128 characters
@@ -76,6 +76,7 @@ var numbers = () => {
 // Prompt asking if you would like to include symbols(4)
 // Ok = include symbols
 // cancel = don't include
+
 
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
