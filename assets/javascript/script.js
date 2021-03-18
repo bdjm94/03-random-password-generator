@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-}
+
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
 function oneTwoThreeFour(pwd) {
@@ -196,7 +196,7 @@ var start = function() {
 // Cancel = end prompt
 var pwdGenerator = function () {
 var pwdLength = window.prompt ("Choose a password length between 8 and 128 characters.")
-if (parseInt(pwdLength) >= 8 && parseInt(pwdLength) <= 128){
+if (parseInt(pwdLength) >= 8 && parseInt(pwdLength) <= 128) {
 lengthOfPwd = pwdLength
 } else {
   window.alert("Invalid response - please try again.")
@@ -316,6 +316,7 @@ return passwordGenerator
 
 var passwordText = document.querySelector("#password");
 passwordText.value = password();
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
