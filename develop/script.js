@@ -190,4 +190,14 @@ function threeFour(pwd) {
 
 // If 4 = yes, 1, 2, 3 = no, generate random password with 4
 
+function four(pwd) {
+  var password = "";
+  var characters = "!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1, 2, 3, 4 = no, invalid response - please start again
