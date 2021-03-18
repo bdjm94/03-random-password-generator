@@ -34,17 +34,87 @@ generateBtn.addEventListener("click", writePassword);
 
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
+function oneTwoThreeFour(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for ( var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1, 3, 4 = yes, 2 = no, generate random password with 1, 3, 4
+
+function oneThreeFour(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 1, 2, 4 = yes, 3 = no, generate random password with 1, 2, 4
 
+function oneTwoFour(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1, 4 = yes, 2, 3 = no, generate random password with 1, 4
+
+function oneFour(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 1, 3 = yes, 2, 4 = no, generate random password with 1, 3
 
+function oneThree(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyz0123456789";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1, 2 = yes, 3, 4 = no, generate random password with 1, 2
 
+function oneTwo(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 1 = yes, 2, 3, 4 = no, generate random password with 1
+
+function one(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyz";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 1, 3, 4 = no, 2 = yes, generate random password with 2
 
