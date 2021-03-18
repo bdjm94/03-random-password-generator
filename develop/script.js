@@ -86,6 +86,13 @@ var symbols = () => {
   }
 };
 
+// Running Functions
+pwdGenerator();
+lowercase();
+uppercase();
+numbers();
+symbols();
+
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
 function oneTwoThreeFour(pwd) {
