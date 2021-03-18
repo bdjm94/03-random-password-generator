@@ -3,9 +3,6 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var passwordText = document.querySelector("#password");
-  passwordText.value = password();
-
 }
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
@@ -185,9 +182,6 @@ function four(pwd) {
   return password;
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
 // Answer variables
 var lengthOfPwd;
 var lowercaseOption;
@@ -319,3 +313,9 @@ var password = () => {
 }
 return passwordGenerator
 };
+
+var passwordText = document.querySelector("#password");
+passwordText.value = password();
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
