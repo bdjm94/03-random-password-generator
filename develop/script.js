@@ -93,6 +93,8 @@ uppercase();
 numbers();
 symbols();
 
+function createPwd() {
+
 // If 1, 2, 3, 4 = yes, generate random password with 1, 2, 3, 4
 
 function oneTwoThreeFour(pwd) {
@@ -110,6 +112,16 @@ function oneTwoThreeFour(pwd) {
 function oneThreeFour(pwd) {
   var password = "";
   var characters = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
+function oneTwoThree(pwd) {
+  var password = "";
+  var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   var charactersPwd = characters.length;
   for (var i = 0; i < pwd; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersPwd));
@@ -267,4 +279,47 @@ if (lowercaseOption === false && uppercaseOption === false && numberOption === f
   window.alert("Invalid response - no options selected. Please start again.")
   start();
 }
+}
+
+// Run program
+
+start();
+
+// Generating passwords through the options chosen
+
+var password = () => {
+  var passwordGenerator;
+  if (lowercaseOption === true && uppercaseOption === true && numberOption === true && symbolsOption === true) {
+    passwordGenerator = oneTwoThreeFour(lengthOfPwd);
+  } else if (lowercaseOption === true && uppercaseOption === true && numberOption === true && symbolsOption === false) {
+    passwordGenerator = oneTwoThree(lengthOfPwd);
+  } else if (lowercaseOption === true && uppercaseOption === false && numberOption === true && symbolsOption === true) {
+    passwordGenerator = oneThreeFour(lengthOfPwd);
+  } else if (lowercaseOption === true && uppercaseOption === true && numberOption === false && symbolsOption === true) {
+    passwordGenerator = oneTwoFour(lengthOfPwd);
+} else if (lowercaseOption === true && uppercaseOption === false && numberOption === false && symbolsOption === true) {
+    passwordGenerator = oneFour(lengthOfPwd);
+} else if (lowercaseOption === true && uppercaseOption === false && numberOption === true && symbolsOption === false) {
+  passwordGenerator = oneThree(lengthOfPwd);
+} else if (lowercaseOption === true && uppercaseOption === true && numberOption === false && symbolsOption === false) {
+  passwordGenerator = oneTwo(lengthOfPwd);
+} else if (lowercaseOption === true && uppercaseOption === false && numberOption === false && symbolsOption === false) {
+  passwordGenerator = one(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === true && numberOption === true && symbolsOption === true) {
+  passwordGenerator = twoThreeFour(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === true && numberOption === true && symbolsOption === false) {
+  passwordGenerator = twoThree(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === true && numberOption === false && symbolsOption === true) {
+  passwordGenerator = twoFour(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === true && numberOption === false && symbolsOption === false) {
+  passwordGenerator = two(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === false && numberOption === true && symbolsOption === true) {
+  passwordGenerator = threeFour(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === false && numberOption === true && symbolsOption === false) {
+  passwordGenerator = three(lengthOfPwd);
+} else if (lowercaseOption === false && uppercaseOption === false && numberOption === false && symbolsOption === true) {
+  passwordGenerator = four(lengthOfPwd);
+}
+return passwordGenerator
+};
 }
