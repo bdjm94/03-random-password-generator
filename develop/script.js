@@ -52,6 +52,16 @@ var lowercase = () => {
 // Ok = include upper case letters
 // cancel = don't include
 
+var uppercase = () => {
+  var uppercasePrompt = window.confirm("Would you like to include uppercase letters? Ok for Yes, Cancel for No.");
+  if (uppercasePrompt == true) {
+    uppercaseOption = true;
+  } else {
+    uppercaseOption = false;
+  }
+};
+
+
 // Prompt asking if you would like to have numbers(3)
 
 // Prompt asking if you would like to include symbols(4)
