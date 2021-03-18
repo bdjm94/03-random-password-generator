@@ -166,7 +166,27 @@ function twoThreeFour(pwd) {
 
 // If 1, 2, 4 = no, 3 = yes, generate random password with 3
 
+function three(pwd) {
+  var password = "";
+  var characters = "0123456789";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
+
 // If 3, 4 = yes, 1, 2 = no, generate random password with 3, 4
+
+function threeFour(pwd) {
+  var password = "";
+  var characters = "0123456789!@#$%^&*()_+{}[],.<>/;:";
+  var charactersPwd = characters.length;
+  for (var i = 0; i < pwd; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersPwd));
+  }
+  return password;
+}
 
 // If 4 = yes, 1, 2, 3 = no, generate random password with 4
 
