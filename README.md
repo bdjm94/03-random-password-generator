@@ -4,7 +4,7 @@
 Due to the increase need for password security, the Random Password Generator was designed to output a unique password containing lowercase and uppercase letters, numbers and symobls. Keep your details safe and secure by using a password from this generator!
 
 ## Functionality
-When opening up the [Password Generator](https://bdjm94.github.io/random-password-generator/), click on the "Generate Password" button and begin the process of choosing your new random password. You will have the option of choosing the length and whether or not you want to include uppercase and lowercase letters, numbers and symbols. Don't forget to copy what is presented and save it in a safe place!
+When opening up the [Password Generator](https://bdjm94.github.io/03-random-password-generator/), click on the "Generate Password" button and begin the process of choosing your new random password. You will have the option of choosing the length and whether or not you want to include uppercase and lowercase letters, numbers and symbols. Don't forget to copy what is presented and save it in a safe place!
 
 ## Password Generator in Use
 Home page after clicking on the "Generate Password" button and including a valid character length of 8.
